@@ -32,7 +32,6 @@ spec:
       labels:
         app: build2018-rating-web
         draft: {{ default "draft-app" .Values.draft }}
-        app: {{ template "fullname" . }}
     spec:
       containers:
       - name: build2018-rating-web
