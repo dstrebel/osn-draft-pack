@@ -24,6 +24,8 @@ spec:
       app: build2018-rating-web
   template:
     metadata:
+      annotations:
+        buildID: {{ .Values.buildID }}
       labels:
         app: build2018-rating-web
     spec:
