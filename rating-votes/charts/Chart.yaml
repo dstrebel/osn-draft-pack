@@ -1,0 +1,7 @@
+name: rating-web
+home: https://github.com/dstrebel/draft-packs/packs
+version: 1.0
+description: Charts for deploying ratings app to k8s
+maintainers: 
+  - name: dstrebel
+    email: dastrebel@microsoft.com
