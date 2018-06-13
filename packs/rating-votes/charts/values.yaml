@@ -1,5 +1,3 @@
-image: "dstrebel/osn-ratings-web"
-imageTag: "v5"
 apiSites: "http://build2018-api-sites:8080/"
 apiSubjects: "http://build2018-api-subjects:8080/"
 apiRatings: "http://build2018-api-ratings:8080/"
