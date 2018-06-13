@@ -17,6 +17,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: build2018-rating-web
+  labels:
+    draft: {{ default "draft-app" .Values.draft }}
+    chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
 spec:
   replicas: 1
   selector:
@@ -28,6 +31,8 @@ spec:
         buildID: {{ .Values.buildID }}
       labels:
         app: build2018-rating-web
+        draft: {{ default "draft-app" .Values.draft }}
+        app: {{ template "fullname" . }}
     spec:
       containers:
       - name: build2018-rating-web
